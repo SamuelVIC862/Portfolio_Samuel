@@ -1,0 +1,24 @@
+@use '../variables'
+@use '../mixins'
+
+.projects_cont
+    margin-bottom: 1rem
+
+    .projects_grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+    .project_card
+        @include mixins.center
+        gap: 1rem
+        padding: 1rem
+        border: 1px solid #333
+        width: 100%
+        border-radius: variables.$container-border
+        background-image: url(https://i.pinimg.com/564x/fb/46/4d/fb464dec8d60c15efdcad744ca44c5bf.jpg)
+        background-position: center
+        background-size: cover
+        height: 15rem
+
+
