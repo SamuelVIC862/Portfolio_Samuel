@@ -1,4 +1,4 @@
-import Avatar from '../img/eu.jpeg'
+import Avatar from '../img/eu.jpg'
 import '../styles/components/sidebar.sass'
 import { ContactContainer } from './ContactContainer'
 import SocialNet from './SocialNet'
@@ -9,7 +9,7 @@ const Sidebar = () => {
         <p className="title">Desenvolvedor Web</p>
         <SocialNet/>
         <ContactContainer/>
-        <a href="" className="btn">Dowload Curriculo</a>
+        <a href="https://drive.google.com/file/d/1hZFilGusKyhfZdMDSYnaDEnoadXzV0Co/view?usp=drive_link" className="btn">Dowload Curriculo</a>
   </aside>
 
 }
