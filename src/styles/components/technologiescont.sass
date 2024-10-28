@@ -4,17 +4,21 @@
 .technologies_cont
     margin-bottom: 1rem
 
-    .technologies_grid
-        display: flex
-        flex-wrap: wrap
-        gap: 1.5rem
+.technologies_grid
+    display: grid
+    gap: 1.5rem
+
+    @media (min-width: 320px)
+        grid-template-columns: repeat(1, 1fr)
+    @media (min-width: 1400px)
+        grid-template-columns: repeat(2, 1fr)
 
     .tech_card
         @include mixins.center
         gap: 1rem
         padding: 1rem
         border: 1px solid #333
-        width: 45%
+        width: 100%
         border-radius: variables.$card-border
 
         h3
@@ -26,18 +30,35 @@
     #html
         svg
             color: #E44D26
+            width: 100%
     #css
         svg
             color: #1572b6
+            width: 100%
     #js
         svg
             color: #f0db4f
+            width: 100%
     #sass
         svg
             color: #CD6799
+            width: 100%
     #sql
         svg
             color: #003C58
+            width: 100%
     #react
         svg
             color: #61dafb
+            width: 100%
+    #tailwind
+        svg
+            color: #45adca
+            width: 100%
+    #next
+        svg
+            width: 100%
+    #ts
+        svg
+            color: #45adca
+            width: 100%

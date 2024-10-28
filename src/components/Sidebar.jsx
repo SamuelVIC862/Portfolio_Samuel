@@ -5,11 +5,13 @@ import SocialNet from './SocialNet'
 
 const Sidebar = () => {
   return <aside id="sidebar">
-        <img src={Avatar} alt="" />
-        <p className="title">Desenvolvedor Web</p>
-        <SocialNet/>
-        <ContactContainer/>
-        <a href="https://drive.google.com/file/d/1hZFilGusKyhfZdMDSYnaDEnoadXzV0Co/view?usp=drive_link" className="btn">Dowload Curriculo</a>
+    <div className='box'>
+      <img src={Avatar} alt="" />
+    </div>
+    <p className="title">Desenvolvedor Web</p>
+    <SocialNet />
+    <ContactContainer />
+    <a href="https://drive.google.com/file/d/1hZFilGusKyhfZdMDSYnaDEnoadXzV0Co/view?usp=drive_link" className="btn">Dowload Curriculo</a>
   </aside>
 
 }
